@@ -1,0 +1,9 @@
+export declare const SMS_SEND_ERROR = "SMS_SEND_ERROR";
+export declare const SMS_ERROR = "SMS_ERROR";
+export declare const SMS_RECEIVE_ERROR = "SMS_RECEIVE_ERROR";
+export declare const SMS_FORMAT_ERROR = "SMS_FORMAT_ERROR";
+export declare const SMS_DELIVERY_ERROR = "SMS_DELIVERY_ERROR";
+export declare const SMS_CONNECTION_ERROR = "SMS_CONNECTION_ERROR";
+export declare const SMS_AUTHENTICATION_ERROR = "SMS_AUTHENTICATION_ERROR";
+export declare const SMS_CONFIGURATION_ERROR = "SMS_CONFIGURATION_ERROR";
+export declare const SMS_UNKNOWN_ERROR = "SMS_UNKNOWN_ERROR";

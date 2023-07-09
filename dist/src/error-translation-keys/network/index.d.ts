@@ -1,0 +1,13 @@
+export declare const NETWORK_ERROR = "NETWORK_ERROR";
+export declare const REQUEST_TIMEOUT = "REQUEST_TIMEOUT";
+export declare const RATE_LIMIT_EXCEEDED = "RATE_LIMIT_EXCEEDED";
+export declare const SERVICE_UNAVAILABLE = "SERVICE_UNAVAILABLE";
+export declare const CONNECTION_TIMEOUT = "CONNECTION_TIMEOUT";
+export declare const CONNECTION_RESET = "CONNECTION_RESET";
+export declare const CONNECTION_REFUSED = "CONNECTION_REFUSED";
+export declare const CONNECTION_CLOSED = "CONNECTION_CLOSED";
+export declare const SERVER_NOT_FOUND = "SERVER_NOT_FOUND";
+export declare const TIMEOUT_ERROR = "TIMEOUT_ERROR";
+export declare const PROXY_ERROR = "PROXY_ERROR";
+export declare const GATEWAY_TIMEOUT = "GATEWAY_TIMEOUT";
+export declare const RESOURCE_UNAVAILABLE = "RESOURCE_UNAVAILABLE";

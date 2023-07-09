@@ -1,0 +1,12 @@
+export declare const FILE_UPLOAD_ERROR = "FILE_UPLOAD_ERROR";
+export declare const FILE_DOWNLOAD_ERROR = "FILE_DOWNLOAD_ERROR";
+export declare const INVALID_FILE_FORMAT = "INVALID_FILE_FORMAT";
+export declare const FILE_TOO_LARGE = "FILE_TOO_LARGE";
+export declare const INVALID_FILE_TYPE = "INVALID_FILE_TYPE";
+export declare const INVALID_FILE_SIZE = "INVALID_FILE_SIZE";
+export declare const FILE_NOT_FOUND = "FILE_NOT_FOUND";
+export declare const FILE_READ_ERROR = "FILE_READ_ERROR";
+export declare const FILE_WRITE_ERROR = "FILE_WRITE_ERROR";
+export declare const FILE_EXPORT_FAILED = "FILE_EXPORT_FAILED";
+export declare const FILE_EXPORT_REQUEST_NOT_FOUND = "FILE_EXPORT_REQUEST_NOT_FOUND";
+export declare const FILE_EXPORT_REQUEST_ALREADY_COMPLETED = "FILE_EXPORT_REQUEST_ALREADY_COMPLETED";
