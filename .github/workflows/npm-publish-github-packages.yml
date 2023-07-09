@@ -1,0 +1,48 @@
+# This workflow will publish Primal collection to GitHub Packages when a release is created
+
+name: Primal Error-keys
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+
+  publish-gpr:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+      - run: npm ci
+      - name: Publish Package to GitHub Packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_PRIMAL_COLLECTIONS_GITHUB_TOKEN }}
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=$NODE_AUTH_TOKEN" >> .npmrc
+          npm publish
+      - name: slack-notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: ${{ secrets.SLACK_CI_NOTIFICATION_CHANNEL }}
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_USERNAME: Primal Collection
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_COLOR: success
+          SLACK_TITLE: ${{ env.REPO_NAME }} published
+          SLACK_MESSAGE: ${{ env.npm_package_name }} version ${{ env.npm_package_version }} published
+          SLACK_FOOTER: ''

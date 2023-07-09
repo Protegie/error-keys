@@ -1,0 +1,23 @@
+{
+  "name": "@PrimalJournal/error-keys",
+  "version": "0.0.1",
+  "description": "A list of error-keys",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "node prepare.js"
+  },
+  "keywords": [
+    "error keys",
+    "translation keys"
+  ],
+  "author": "Israel Ayokunnu",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PrimalJournal/error-keys"
+  }
+}
