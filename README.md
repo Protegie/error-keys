@@ -1,4 +1,4 @@
-# @PrimalJournal/error-keys
+# @protegie/error-keys
 
 A comprehensive library of standard error keys for streamlined and efficient error handling across diverse domains.
 
@@ -6,14 +6,14 @@ A comprehensive library of standard error keys for streamlined and efficient err
 
 Use the following command to install this package:
 
-``npm install @PrimalJournal/error-keys``
+``npm install @protegie/error-keys``
 
 # Usage
 
 After installation, you can import only the necessary keys for your module. Here is an example:
 
 ```
-import { INVALID_CREDENTIALS_PROVIDED } from '@PrimalJournal/error-keys/authentication';
+import { INVALID_CREDENTIALS_PROVIDED } from '@protegie/error-keys/authentication';
 
 if (!validCredentials) {
   throw new Error(INVALID_CREDENTIALS_PROVIDED);
