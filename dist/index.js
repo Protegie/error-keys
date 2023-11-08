@@ -23,3 +23,4 @@ __exportStar(require("./src/error-translation-keys/manuscript"), exports);
 __exportStar(require("./src/error-translation-keys/network"), exports);
 __exportStar(require("./src/error-translation-keys/profile"), exports);
 __exportStar(require("./src/error-translation-keys/sms"), exports);
+__exportStar(require("./src/error-translation-keys/user"), exports);

@@ -1,6 +1,6 @@
 {
   "name": "error-translation-refs",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A list of error-keys",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -7,3 +7,4 @@ export * from './src/error-translation-keys/manuscript';
 export * from './src/error-translation-keys/network';
 export * from './src/error-translation-keys/profile';
 export * from './src/error-translation-keys/sms';
+export * from './src/error-translation-keys/user';
